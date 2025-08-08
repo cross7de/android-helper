@@ -1,45 +1,40 @@
 # android-helper
 
-Android Debloat & Install Helper – **Multi-Profil** (Moto, Xiaomi/MIUI/HyperOS, generic).
+Ein universeller ADB-Helfer für Android-Geräte (z. B. Motorola, Xiaomi, HyperOS, MIUI).  
+Unterstützt Debloat, Reinstall und APK-Installationen – alles per Profil steuerbar.
+
+---
+
+## Quickstart (lokal)
+
+```bash
+# 1. Virtuelle Umgebung anlegen und aktivieren
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 2. Im Entwicklermodus installieren
+pip install -e .
+
+# 3. CLI starten
+android-helper --help
+
+# ... oder lokal ohne Installation (Wrapper)
+./android_helper.py --help
+```
+
+---
 
 ## Features
-- Profile: `--profile auto|moto|xiaomi_miui|xiaomi_hyperos|generic` (Auto-Detect Standard)
-- Debloat per Profil-Listen (config/<profil>/debloat.list, protect.list) oder Defaults
-- Install: Reinstall (System-Apps), APK(s) (inkl. Split-APKs), Play-Store-Intent
-- Interaktives Menü
-- Saubere CLI: `-n/--dry-run`, `-q/--quiet`, `-y/--yes`, `-V/--version`, `-P/--profile`
 
-## Quickstart
-```bash
-chmod +x android_helper.py
-./android_helper.py --help
-./android_helper.py            # Quickstart + Menü
-./android_helper.py debloat -P auto
-./android_helper.py install reinstall
-./android_helper.py install apk -p ./apks/
-./android_helper.py install playstore -f ./config/moto/playstore.list
-```
+- Mehrere Geräte-Profile (`moto`, `xiaomi_miui`, `xiaomi_hyperos`, …)
+- Debloat-Listen (`config/<profil>/debloat.list`)
+- Schutz-Listen (`config/<profil>/protect.list`)
+- Installations- und Reinstall-Optionen
+- Saubere CLI mit Kurz- und Langoptionen
+- CI-Checks (ruff, Smoke-Test)
 
-## Profile & Konfig
-```
-config/
-  moto/
-    debloat.list
-    protect.list
-  xiaomi_miui/
-    debloat.list
-    protect.list
-  xiaomi_hyperos/
-    debloat.list
-    protect.list
-```
-- Falls eine Datei nicht existiert, greifen **sinnvolle Defaults**.
-
-## Installation als Tool (optional)
-```bash
-python3 -m pip install -e .
-android-helper --help
-```
+---
 
 ## Lizenz
-MIT
+[MIT](LICENSE)
+

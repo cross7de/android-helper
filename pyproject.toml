@@ -13,10 +13,12 @@ readme = "README.md"
 android-helper = "android_helper.cli:main"
 
 [tool.setuptools]
-# Wir sagen Setuptools EXPLIZIT, was ein Package ist
-packages = ["android_helper"]
+# src-Layout aktivieren
+package-dir = {"" = "src"}
 
-# Falls du lieber automatische Suche willst, dann so:
-# [tool.setuptools.packages.find]
-# include = ["android_helper*"]
-# exclude = ["config*", "apks*", "state*", "tests*"]
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["android_helper*"]
+exclude = ["tests*", "docs*"]
+
+# (optional) falls du später Datenfiles ins Wheel willst, kommt hier [tool.setuptools.package-data]

@@ -5,3 +5,7 @@ state/
 apks/
 .idea/
 .vscode/
+build/
+dist/
+*.egg-info/
+commit-msg.txt
