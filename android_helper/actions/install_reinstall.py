@@ -21,10 +21,10 @@ def cmd_install_reinstall(scan_uninstalled: bool, use_state: bool):
         candidates.extend([it.get("pkg") for it in removed_state if it.get("pkg")])
     if scan_uninstalled or not candidates:
         out = run(f"{ctx.adb_path} shell pm list packages -u").stdout.splitlines()
-        for l in out:
-            l = l.strip()
-            if l.startswith("package:"):
-                pkg = l.split(":", 1)[1].split(" ", 1)[0]
+        for line in out:
+            line = line.strip()
+            if line.startswith("package:"):
+                pkg = line.split(":", 1)[1].split(" ", 1)[0]
                 if pkg not in candidates:
                     candidates.append(pkg)
     if not candidates:

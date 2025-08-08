@@ -1,4 +1,5 @@
-import subprocess, shlex
+import subprocess
+import shlex
 from shutil import which as _which
 from .log import log, err_fatal
 from ..constants import ctx

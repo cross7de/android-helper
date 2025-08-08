@@ -1,4 +1,5 @@
-import shlex, time
+import shlex
+import time
 from ..utils.adb import run, require_adb, device_info, detect_profile
 from ..utils.io import read_list_file, load_state, save_state
 from ..utils.log import log, warn
