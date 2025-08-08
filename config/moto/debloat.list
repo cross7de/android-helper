@@ -1,0 +1,52 @@
+# Motorola – Debloat-Liste (paket|beschreibung)
+# Drittanbieter/Partner
+com.facebook.katana|Facebook
+com.facebook.appmanager|Facebook App Manager
+com.facebook.services|Facebook Services
+com.facebook.system|Facebook System
+com.instagram.android|Instagram
+com.zhiliaoapp.musically|TikTok
+com.netflix.mediaclient|Netflix
+com.booking|Booking.com
+com.linkedin.android|LinkedIn
+com.spotify.music|Spotify
+com.amazon.mShop.android.shopping|Amazon Shopping
+com.amazon.appmanager|Amazon App Manager
+cn.wps.moffice_eng|WPS Office
+
+# Google-Extras (nicht kritisch für Kernfunktion)
+com.google.android.youtube|YouTube
+com.google.android.youtube.music|YouTube Music
+com.google.android.videos|Google TV
+com.google.android.apps.magazines|Google News
+com.google.android.apps.podcasts|Google Podcasts
+com.google.android.apps.tachyon|Google Meet
+com.google.android.apps.subscriptions.red|Google One
+com.google.ar.lens|Google Lens
+com.google.android.gm|Gmail
+com.google.android.apps.docs|Google Drive
+com.google.android.apps.photos|Google Photos
+com.google.android.apps.messaging|Google Messages
+com.google.android.googlequicksearchbox|Google App/Assistant
+com.google.android.apps.youtube.music|YouTube Music (Variante)
+
+# Motorola optional (kosmetisch/Hilfe/Widgets/Tools)
+com.motorola.help|Moto Hilfe
+com.motorola.genie|Moto Tipps/Assistent
+com.motorola.timeweatherwidget|Moto Zeit & Wetter Widget
+com.motorola.android.fmradio|Moto FM Radio
+com.motorola.fmplayer|Moto FM Player (Variante)
+com.motorola.gamemode|Moto Game Mode
+com.motorola.bug2go|Moto Feedback/Bug2Go
+com.motorola.paks|Moto Paks
+com.motorola.appforecast|Moto App Forecast
+com.motorola.motocare|Moto Care
+com.motorola.motocare.internal|Moto Care (intern)
+com.motorola.android.nativedropboxagent|Moto DropBox Agent
+com.motorola.hiddenmenuapp|Moto Hidden Menu App
+com.motorola.screenshoteditor|Moto Screenshot Editor
+com.motorola.demo|Retail Demo
+com.motorola.demo.env|Retail Demo (Env)
+com.motorola.brapps|Moto/Lenovo Br Apps
+com.motorola.easyprefix|Easy Prefix
+com.motorola.faceunlock|Face Unlock (nur wenn ungenutzt)
