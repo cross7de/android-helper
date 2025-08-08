@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "android-helper"
 version = "2.0.0"
@@ -7,3 +11,14 @@ readme = "README.md"
 
 [project.scripts]
 android-helper = "android_helper.cli:main"
+
+[tool.setuptools]
+# src-Layout aktivieren
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["android_helper*"]
+exclude = ["tests*", "docs*"]
+
+# (optional) falls du später Datenfiles ins Wheel willst, kommt hier [tool.setuptools.package-data]

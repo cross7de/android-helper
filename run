@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+exec ./android_helper_local.py "$@"

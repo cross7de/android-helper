@@ -5,3 +5,11 @@ state/
 apks/
 .idea/
 .vscode/
+build/
+dist/
+*.egg-info/
+commit-msg.txt
+*.egg-info/
+build/
+dist/
+.ruff_cache/
