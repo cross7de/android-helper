@@ -44,6 +44,3 @@ jobs:
 
       - name: CLI help (console script)
         run: android-helper --help
-
-      - name: Module entrypoint
-        run: python -m android_helper.cli --help

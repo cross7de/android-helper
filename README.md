@@ -19,7 +19,7 @@ pip install -e .
 android-helper --help
 
 # ... oder lokal ohne Installation (Wrapper)
-./android_helper.py --help
+./android_helper_local.py --help
 ```
 
 ---

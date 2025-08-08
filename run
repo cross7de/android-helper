@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Einfach: ./run --help
-exec ./android_helper.py "$@"
+exec ./android_helper_local.py "$@"

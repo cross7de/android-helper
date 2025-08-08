@@ -2,6 +2,8 @@
 
 Diese Datei ist für Entwickler und dich selbst als „Langzeit-Gedächtnis“ gedacht.
 
+---
+
 ## Lokale Einrichtung
 
 ```bash
@@ -15,6 +17,8 @@ pip install -e .
 source .venv/bin/activate
 ```
 
+---
+
 ## Wichtige Befehle
 
 - CLI starten (installiert):  
@@ -24,23 +28,25 @@ source .venv/bin/activate
 
 - CLI starten (ohne Installation, Wrapper):  
   ```bash
-  ./android_helper.py --help
+  ./android_helper_local.py --help
   ```
 
 - Linter prüfen:  
   ```bash
-  ruff check src android_helper.py
+  ruff check src android_helper_local.py
   ```
 
 - Auto-Fixes mit Ruff:  
   ```bash
-  ruff check src android_helper.py --fix
+  ruff check src android_helper_local.py --fix
   ```
 
 - Smoke-Test lokal:  
   ```bash
   python -m android_helper.cli --help
   ```
+
+---
 
 ## Branch-Strategie
 
@@ -49,6 +55,8 @@ source .venv/bin/activate
 - `fix/*` → Bugfixes
 - PRs werden per GitHub Actions (Lint + Smoke-Test) geprüft
 
+---
+
 ## Dateien und Verzeichnisse
 
 - `src/android_helper/` → Python-Paket
@@ -56,6 +64,8 @@ source .venv/bin/activate
 - `apks/` → APK-Dateien für Installationen
 - `state/` → Laufzeit-/Cache-Daten
 - `.github/workflows/ci.yml` → CI-Definition (Python 3.10, Ruff, Smoke-Test)
+
+---
 
 ## Tipps
 
